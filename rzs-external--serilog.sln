@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rzs-external--serilog", "rzs-external--serilog.csproj", "{8ADF8204-89FD-4B5D-8F64-FC003681E1A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rzs-external--serilog", "rzs-external--serilog/rzs-external--serilog.csproj", "{8ADF8204-89FD-4B5D-8F64-FC003681E1A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9224DB4A-D5EB-4170-8DAD-6540E426898D}"
 	ProjectSection(SolutionItems) = preProject
