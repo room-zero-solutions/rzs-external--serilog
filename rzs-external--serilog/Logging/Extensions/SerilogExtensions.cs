@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Serilog;
 using Serilog.Configuration;
 using Serilog.Core;
@@ -46,6 +47,15 @@ namespace RzsSerilog.Logging.Extensions
             if (outputTemplate == null) throw new ArgumentNullException(nameof(outputTemplate));
 
             return configuration.Sink(InMemorySink.Instance, restrictedToMinimumLevel, levelSwitch);
+        }
+
+        public static IApplicationBuilder UseRzsSerilog(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<RequestLogContextMiddleware>();
+
+            app.UseSerilogRequestLogging(options => options.EnrichDiagnosticContext = LogEnricher.EnrichFromRequest);
+
+            return app;
         }
     }
 }
