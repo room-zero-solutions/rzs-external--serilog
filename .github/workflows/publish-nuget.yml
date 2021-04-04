@@ -1,0 +1,40 @@
+name: Publish NuGet
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+        source-url: https://nuget.pkg.github.com/room-zero-solutions/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.MACHINE_REPO_PAT_2 }}
+
+    - name: View
+      run: |
+        ls
+
+    - name: Restore dependencies
+      run: dotnet restore 
+    
+    - name: Build
+      run: dotnet build -c Release
+
+    - name: View
+      run: ls -R
+
+    - name: Publish
+      run: dotnet nuget push ./rzs-external---serilog/bin/Release/*.nupkg --api-key ${{ secrets.MACHINE_REPO_PAT_2 }} --source https://nuget.pkg.github.com/room-zero-solutions/index.json --skip-duplicate --no-symbols true
