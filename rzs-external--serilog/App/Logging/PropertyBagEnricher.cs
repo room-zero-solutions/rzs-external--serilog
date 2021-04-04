@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace RzsSerilog.Logging
+namespace RzsSerilog.App.Logging
 {
     public class PropertyBagEnricher : ILogEventEnricher
     {

@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace RzsSerilog.Logging
+namespace RzsSerilog.App.Logging
 {
     public class InMemorySink : ILogEventSink, IDisposable, IInMemorySink
     {

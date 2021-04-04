@@ -3,7 +3,7 @@ using Serilog.Events;
 using System;
 using System.Diagnostics;
 
-namespace RzsSerilog.Logging
+namespace RzsSerilog.App.Logging
 {
     public class BuildInfoEnricher : ILogEventEnricher
     {

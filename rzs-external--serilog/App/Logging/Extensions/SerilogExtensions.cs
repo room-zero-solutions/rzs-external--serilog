@@ -8,7 +8,7 @@ using System;
 using System.Diagnostics;
 using System.Linq;
 
-namespace RzsSerilog.Logging.Extensions
+namespace RzsSerilog.App.Logging.Extensions
 {
     public static class SerilogExtensions
     {
@@ -38,7 +38,7 @@ namespace RzsSerilog.Logging.Extensions
         }
 
         public static LoggerConfiguration InMemory(
-             this LoggerSinkConfiguration configuration,
+            this LoggerSinkConfiguration configuration,
             LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum,
             string outputTemplate = DefaultOutputTemplate,
             LoggingLevelSwitch? levelSwitch = null)
