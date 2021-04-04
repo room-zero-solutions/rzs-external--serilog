@@ -1,11 +1,11 @@
-﻿using RzsExternalSerilog.Api.Logging;
+﻿using RzsSerilog.Api.Logging;
 using Serilog.Core;
 using Serilog.Events;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace RzsExternalSerilog.Logging
+namespace RzsSerilog.Logging
 {
     public class InMemorySink : ILogEventSink, IDisposable, IInMemorySink
     {

@@ -4,7 +4,7 @@ using Serilog.Events;
 using System;
 using System.Text;
 
-namespace RzsExternalSerilog.Logging
+namespace RzsSerilog.Logging
 {
     public class EventTypeEnricher : ILogEventEnricher
     {

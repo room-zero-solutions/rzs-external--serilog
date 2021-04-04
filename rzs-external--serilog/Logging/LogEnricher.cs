@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
-using RzsExternalSerilog.Logging.Extensions;
+using RzsSerilog.Logging.Extensions;
 using Serilog;
 using System.Diagnostics;
 using System.Linq;
 
-namespace RzsExternalSerilog.Logging
+namespace RzsSerilog.Logging
 {
     public static class LogEnricher
     {

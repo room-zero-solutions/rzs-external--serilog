@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
-using RzsExternalSerilog.Logging.Extensions;
+using RzsSerilog.Logging.Extensions;
 using Serilog.Context;
 using System.Threading.Tasks;
 
-namespace RzsExternalSerilog.Logging
+namespace RzsSerilog.Logging
 {
     public class RequestLogContextMiddleware
     {

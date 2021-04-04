@@ -2,11 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    
-    
-    
-    <RootNamespace>RzsExternalSerilog</RootNamespace>
-    <AssemblyName>RzsExternalSerilog</AssemblyName>
+    <Version>1.0.0</Version>
+    <Description>Rzs Serilog</Description>
 
     <PackageLicenseUrl></PackageLicenseUrl>
 
@@ -23,6 +20,8 @@
 
     <PackageId>RzsSerilog</PackageId>
     <Product>RzsSerilog</Product>
+    <RootNamespace>RzsSerilog</RootNamespace>
+    <AssemblyName>RzsSerilog</AssemblyName>
 
     <Nullable>enable</Nullable>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -51,7 +50,6 @@
     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="5.0.0" />
     <PackageReference Include="SerilogAnalyzer" Version="0.15.0" />
-    <PackageReference Include="SharpZipLib" Version="1.3.1" />
   </ItemGroup>
 
 </Project>

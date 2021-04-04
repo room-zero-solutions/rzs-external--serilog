@@ -7,7 +7,7 @@ using System;
 using System.Diagnostics;
 using System.Linq;
 
-namespace RzsExternalSerilog.Logging.Extensions
+namespace RzsSerilog.Logging.Extensions
 {
     public static class SerilogExtensions
     {
