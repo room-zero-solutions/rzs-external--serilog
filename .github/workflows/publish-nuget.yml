@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 5.0.x
         source-url: https://nuget.pkg.github.com/room-zero-solutions/index.json
       env:
-        NUGET_AUTH_TOKEN: ${{ secrets.MACHINE_REPO_PAT_2 }}
+        NUGET_AUTH_TOKEN: ${{ secrets.MACHINE_REPO_PAT_3 }}
 
     - name: View
       run: |
@@ -37,4 +37,4 @@ jobs:
       run: ls -R
 
     - name: Publish
-      run: dotnet nuget push ./rzs-external--serilog/bin/Release/*.nupkg --api-key ${{ secrets.MACHINE_REPO_PAT_2 }} --source https://nuget.pkg.github.com/room-zero-solutions/index.json --skip-duplicate --no-symbols true
+      run: dotnet nuget push ./rzs-external--serilog/bin/Release/*.nupkg --api-key ${{ secrets.MACHINE_REPO_PAT_3 }} --source https://nuget.pkg.github.com/room-zero-solutions/index.json --skip-duplicate --no-symbols true
