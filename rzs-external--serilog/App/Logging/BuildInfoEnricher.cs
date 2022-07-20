@@ -16,6 +16,7 @@ namespace RzsSerilog.App.Logging
             AddProperty(logEvent, propertyFactory, "RZS_GITHUB_BRANCH");
             AddProperty(logEvent, propertyFactory, "RZS_GITHUB_SHA");
             AddProperty(logEvent, propertyFactory, "RZS_TIMESTAMP");
+            AddProperty(logEvent, propertyFactory, "RZS_SEMVER");
         }
 
         private static void AddProperty(LogEvent logEvent, ILogEventPropertyFactory propertyFactory, string name)
