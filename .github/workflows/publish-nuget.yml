@@ -18,7 +18,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 8.0.x
         source-url: https://nuget.pkg.github.com/room-zero-solutions/index.json
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.MACHINE_REPO_PAT_3 }}
