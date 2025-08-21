@@ -1,0 +1,23 @@
+name: OSV-Scanner Push/Scheduled Scan
+
+on:
+  pull_request: {}     # all PRs, all branches
+  merge_group: {}      # PR merge queue support
+  schedule:
+    - cron: "0 1 * * *"
+  # Scan all pushes on all branches
+  push:
+    branches: ["**"]
+
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
+jobs:
+  osv-scan:
+    uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@v2.2.1
+    with:
+      scan-args: --recursive .
+      upload-sarif: false
+      fail-on-vuln: true
