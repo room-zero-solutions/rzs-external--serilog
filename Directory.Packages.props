@@ -1,0 +1,31 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageVersion Include="MurmurHash-net-core" Version="1.0.0" />
+	  <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageVersion Include="Serilog.AspNetCore" Version="8.0.1" />
+	  <PackageVersion Include="Serilog.Enrichers.AspNetCore" Version="1.0.0" />
+	  <PackageVersion Include="Serilog.Enrichers.ClientInfo" Version="2.1.0" />
+	  <PackageVersion Include="Serilog.Enrichers.Context" Version="4.6.5" />
+	  <PackageVersion Include="Serilog.Enrichers.Environment" Version="2.3.0" />
+	  <PackageVersion Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+	  <PackageVersion Include="Serilog.Exceptions" Version="8.4.0" />
+	  <PackageVersion Include="Serilog.Expressions" Version="4.0.0" />
+	  <PackageVersion Include="Serilog.Settings.Configuration" Version="8.0.0" />
+	  <PackageVersion Include="Serilog.Sinks.ApplicationInsights" Version="4.0.0" />
+	  <PackageVersion Include="Serilog.Sinks.Async" Version="1.5.0" />
+	  <PackageVersion Include="Serilog.Sinks.AzureTableStorage" Version="9.4.1" />
+	  <PackageVersion Include="Serilog.Sinks.Console" Version="5.0.1" />
+	  <PackageVersion Include="Serilog.Sinks.File" Version="5.0.0" />
+	  <PackageVersion Include="Serilog.Sinks.Seq" Version="7.0.0" />
+	  <PackageVersion Include="SerilogAnalyzer" Version="0.15.0" />
+
+	  <PackageVersion Include="System.Net.Http" Version="4.3.4" />
+	  <PackageVersion Include="System.Text.Json" Version="8.0.5" />
+	  <PackageVersion Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+</Project>
